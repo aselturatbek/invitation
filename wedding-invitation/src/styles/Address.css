@@ -1,0 +1,136 @@
+/* src/styles/Address.css */
+@font-face {
+     font-family: 'ms-light';
+     src: url('../assets/fonts/montserrat/ms-light.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: 'ms-bold';
+     src: url('../assets/fonts/montserrat/ms-bold.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: 'ms-regular';
+     src: url('../assets/fonts/montserrat/ms-regular.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: 'veryberry';
+     src: url('../assets/fonts/veryberry.otf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
+ @font-face {
+      font-family: 'melina';
+      src: url('../assets/fonts/Melina.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+  }
+.address-container {
+     max-width: 400px;
+     padding: 1.0rem;
+     background-color: #990011;
+     text-align: center;
+     font-family: Arial, sans-serif;
+   }
+   
+   .address-container h2 {
+     font-size: 2.5rem;
+     color:  #FCF6F5;
+     font-family: 'veryberry';
+   }
+   
+   .restaurant-name {
+     font-weight: bold;
+     font-size: 1.3rem;
+     color: #FCF6F5;
+     margin-bottom: 0.3rem;
+     font-family: 'ms-bold';
+   }
+   
+   .city {
+     font-size: 1.1rem;
+     color: #FCF6F5;
+     margin-bottom: 0.5rem;
+     font-family:'ms-regular';
+   }
+   
+   .full-address {
+     font-size: 1rem;
+     color: #FCF6F5;
+     margin-bottom: 1rem;
+     font-family:'ms-light';
+   }
+   
+   .location-button {
+     width: 50%;
+     padding: 0.7rem;
+     background-color: #fcf6fc;
+     color: #990011;
+     border: none;
+     border-radius: 25px;
+     font-size: 1.5rem;
+     cursor: pointer;
+     transition: background-color 0.3s;
+     font-family: 'ms-bold';
+   }
+   
+   .location-button:hover {
+     background-color: #d7c0b1;
+   }
+   .owner-container {
+     max-width: 400px;
+     padding: 1.0rem;
+     background-color: #fff;
+     text-align: center;
+     font-family: Arial, sans-serif;
+   }
+   .owner-container h2 {
+     font-size: 2.5rem;
+     color:  #990011;
+     font-family: 'veryberry';
+   }
+   .name {
+     font-weight: bold;
+     font-size: 1.9rem;
+     color: #333;
+     margin-bottom: 0.3rem;
+     font-family: 'veryberry';
+   }
+   .owner-image {
+     width: 100%;
+     max-width: 300px; /* Resmin genişliği */
+     margin-top: 0.9rem;
+   }
+   .counter-container {
+     text-align: center;
+     margin-top: 2rem;
+     font-family: Arial, sans-serif;
+   }
+   
+   .counter-container h2 {
+     color: #7a5c58;
+     font-size: 1.5rem;
+     margin-bottom: 1rem;
+   }
+   
+   .countdown {
+     display: flex;
+     justify-content: center;
+     gap: 1.5rem;
+   }
+   
+   .countdown div {
+     font-size: 1.2rem;
+     color: #333;
+     text-align: center;
+   }
+   
+   .countdown span {
+     font-size: 2rem;
+     font-weight: bold;
+     color: #4CAF50;
+   }

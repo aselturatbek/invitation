@@ -1,0 +1,27 @@
+.wishes-list {
+     background: #fef5e7;
+     padding: 2em;
+     border-radius: 12px;
+     margin: 2em auto;
+     width: 80%;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+   }
+   
+   .wishes-list h2 {
+     font-size: 1.5em;
+     color: #8b6a4d;
+     margin-bottom: 0.5em;
+   }
+   
+   .wishes-list ul {
+     list-style-type: none;
+     padding: 0;
+   }
+   
+   .wishes-list li {
+     margin: 0.5em 0;
+     padding: 0.5em;
+     background: #ffe6c1;
+     border-radius: 8px;
+   }
+   

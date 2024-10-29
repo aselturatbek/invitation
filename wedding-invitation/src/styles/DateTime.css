@@ -1,0 +1,103 @@
+/* src/styles/DateTime.css */
+@font-face {
+     font-family: 'ms-light';
+     src: url('../assets/fonts/montserrat/ms-light.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: 'ms-bold';
+     src: url('../assets/fonts/montserrat/ms-bold.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: 'ms-regular';
+     src: url('../assets/fonts/montserrat/ms-regular.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: 'veryberry';
+     src: url('../assets/fonts/veryberry.otf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
+ @font-face {
+      font-family: 'melina';
+      src: url('../assets/fonts/Melina.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+  }
+.datetime-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-family: 'serif';
+     color: #333;
+     padding: 1rem;
+     background: #ffffff;
+     max-width: 400px;
+     margin: auto;
+     
+   }
+   
+   header {
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     position: relative;
+   }
+   
+   header h2 {
+     font-size: 3.0rem;
+     color: #990011;
+     font-family: 'veryberry';
+   }
+   header h3 {
+     font-size: 2.5rem;
+     color: #990011;
+     font-family: 'veryberry';
+   }
+
+   .leaf-icon {
+     position: absolute;
+     left: -30px;
+     width: 30px;
+     height: 30px;
+   }
+   
+   
+   .calendar-container {
+     text-align: center;
+     margin-top: 0.1rem;
+   }
+   
+   .calendar-container p {
+     font-size: 1.7rem;
+     color: #990011;
+     font-family: 'veryberry';
+   }
+   
+   .calendar {
+     width: 100%;
+     border-collapse: collapse;
+   }
+   
+   .calendar th, .calendar td {
+     padding: 0.5rem;
+     text-align: center;
+     font-size: 1rem;
+     color: #333;
+     font-family: 'ms-light';
+   }
+   
+   .selected-day {
+     background-color: #e4b5b5;
+     color: #ffffff; /* Beyaz yazı rengi */
+     border-radius: 50%;
+     font-family: 'ms-bold', sans-serif; /* ms-regular fontu */
+     font-weight: normal;
+   }
+  
+   
