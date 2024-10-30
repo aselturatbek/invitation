@@ -31,7 +31,7 @@
   }
 .address-container {
     max-width: 400px;
-    width: 100%; /* Genişliği %90 ayarlayarak küçük ekranlara uyum sağlar */
+    width: 90%; /* Genişliği %90 ayarlayarak küçük ekranlara uyum sağlar */
     padding: 1rem;
     margin: 0 auto;
     background-color: #990011;
@@ -40,6 +40,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 400px;
    }
    
    .address-container h2 {
@@ -87,7 +88,7 @@
    }
    .owner-container {
       max-width: 400px;
-      width: 100%; /* Genişliği %90 ayarlayarak küçük ekranlara uyum sağlar */
+      width: 90%; /* Genişliği %90 ayarlayarak küçük ekranlara uyum sağlar */
       padding: 1rem;
       margin: 0 auto;
       background-color: #fff;

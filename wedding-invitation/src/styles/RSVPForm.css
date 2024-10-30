@@ -2,7 +2,7 @@
   background-color: #fff;
   padding: 30px;
   max-width: 400px;
-  width: 100%; /* Küçük ekranlarda form genişliğini esnek yapar */
+  width: 90%; /* Küçük ekranlarda form genişliğini esnek yapar */
   margin: 0 auto;
   text-align: center;
   color: #333;

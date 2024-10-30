@@ -4,7 +4,7 @@
   color: #fcf6f5;
   font-family: 'ms-regular', sans-serif;
   max-width: 400px; /* Formun genişliğini sınırlandırdık */
-  width: 100%; /* Ekranın %90'ını kapsayacak şekilde ayarlandı */
+  width: 90%; /* Ekranın %90'ını kapsayacak şekilde ayarlandı */
   margin: 30px auto; /* Ekran ortasında hizalamak için */
   display: flex;
   flex-direction: column;
