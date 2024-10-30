@@ -1,0 +1,21 @@
+/* src/styles/Carousel.css */
+
+.carousel-container {
+     width: 100%;
+     overflow-x: auto; /* Yatay kaydırma etkinleştirildi */
+     padding: 1rem 0;
+     display: flex;
+     justify-content: center;
+   }
+   
+   .carousel-content {
+     display: flex;
+     gap: 1rem; /* Görseller arasında boşluk */
+   }
+   
+   .carousel-image {
+     width: 300px; /* Görsellerin genişliği */
+     height: 400px; /* Görsellerin yüksekliği */
+     object-fit: cover; /* Görsellerin kutuya sığması için */
+   }
+   

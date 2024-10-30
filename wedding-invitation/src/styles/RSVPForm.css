@@ -1,38 +1,92 @@
 .rsvp-form {
-     background: #f8e8d4;
-     padding: 2em;
-     border-radius: 12px;
-     margin: 2em auto;
-     width: 80%;
-     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-   }
-   
-   .rsvp-form h2 {
-     font-size: 1.5em;
-     color: #8b6a4d;
-     margin-bottom: 0.5em;
-   }
-   
-   .rsvp-form input {
-     width: 80%;
-     padding: 10px;
-     margin-top: 0.5em;
-     border: 1px solid #d09a72;
-     border-radius: 5px;
-   }
-   
-   .rsvp-form button {
-     margin-top: 1em;
-     background-color: #875c36;
-     color: #fff;
-     border: none;
-     padding: 10px 20px;
-     cursor: pointer;
-     border-radius: 5px;
-     transition: background 0.3s;
-   }
-   
-   .rsvp-form button:hover {
-     background-color: #5f4027;
-   }
-   
+  background-color: #fff;
+  padding: 30px;
+  max-width: 400px;
+  width: 100%; /* Küçük ekranlarda form genişliğini esnek yapar */
+  margin: 0 auto;
+  text-align: center;
+  color: #333;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* İçerikleri yatayda ortalar */
+}
+
+.rsvp-form h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  font-family: 'ms-bold';
+  color: #990011;
+}
+
+.instructions {
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-family: 'ms-light';
+  text-align: center;
+}
+
+.rsvp-form input[type="text"] {
+  width: 100%; /* Genişlik esnek hale getirildi */
+  max-width: 280px; /* Daha geniş ekranlarda sınırlı genişlik */
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border:#990011;
+  outline:#990011;
+  font-family: 'ms-regular';
+  color: #333;
+  background-color: #fcf6f5;
+  border-color: #990011;
+  border-style: solid;
+}
+
+.options {
+  text-align:left; /* Tüm seçenekleri ortalar */
+  margin-bottom: 15px;
+  font-family: 'ms-regular';
+}
+
+.options label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.options input[type="radio"] {
+  margin-right: 8px;
+}
+
+button {
+  background-color: #990011;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'ms-bold';
+  margin-top: 15px;
+  width: 60%; /* Buton genişliği esnek */
+  max-width: 200px; /* Büyük ekranlarda genişliği sınırlı */
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #e7e779;
+}
+
+@media (max-width: 480px) {
+  .rsvp-form {
+    padding: 20px;
+  }
+
+  .rsvp-form h2 {
+    font-size: 1.4rem;
+  }
+
+  .instructions {
+    font-size: 13px;
+  }
+}

@@ -5,44 +5,69 @@ import '../styles/RSVPForm.css';
 
 const RSVPForm = () => {
   const [name, setName] = useState('');
-  const [isAttending, setIsAttending] = useState(false);
+  const [attendanceOption, setAttendanceOption] = useState(''); // Katılım seçeneği
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       await addDoc(collection(db, 'rsvp'), {
         name,
-        isAttending,
+        attendanceOption,
         timestamp: serverTimestamp(),
       });
-      alert('RSVP kaydedildi!');
+      
       setName('');
-      setIsAttending(false);
+      setAttendanceOption('');
     } catch (error) {
-      console.error("RSVP kaydedilemedi: ", error);
+      console.error("RSVP катталбады: ", error);
     }
   };
 
   return (
     <div className="rsvp-form">
-      <h2>Katılımınızı Bildirin</h2>
+      <h2>Тойго катышарыңызды билдирүүңүздү суранабыз!</h2>
+      <p className="instructions">Атыңызды жана, жубуңуз менен келсеңиз, экөөңүздүн тең аттарыңызды кошуп жазыңыз</p>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="İsim"
+          placeholder="Атыңыз"
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
         />
-        <label>
-          <input
-            type="checkbox"
-            checked={isAttending}
-            onChange={() => setIsAttending(!isAttending)}
-          />
-          Katılacağım
-        </label>
-        <button type="submit">Gönder</button>
+        <div className="options">
+          <label>
+            <input
+              type="radio"
+              name="attendance"
+              value="Келемин"
+              checked={attendanceOption === 'Келемин'}
+              onChange={(e) => setAttendanceOption(e.target.value)}
+            />
+            Келемин
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="attendance"
+              value="Жубум менен келемин"
+              checked={attendanceOption === 'Жубум менен келемин'}
+              onChange={(e) => setAttendanceOption(e.target.value)}
+            />
+            Жубум менен келемин
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="attendance"
+              value="Өкүнүчкө жараша, катыша албайм"
+              checked={attendanceOption === 'Өкүнүчкө жараша, катыша албайм'}
+              onChange={(e) => setAttendanceOption(e.target.value)}
+            />
+            Өкүнүчкө жараша, катыша албайм
+          </label>
+        </div>
+        <button type="submit">Жиберүү</button>
       </form>
     </div>
   );

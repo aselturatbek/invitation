@@ -8,6 +8,7 @@ import Content from './components/Content';
 import Carousel from './components/Carousel';
 import DateTime from './components/DateTime';
 import Address from './components/Address';
+import Footer from './components/Footer';
 //style
 
 
@@ -25,9 +26,10 @@ function App() {
       <Carousel/>
       <DateTime/>
       <Address/>
-      <RSVPForm />
-      <WishesForm onAddWish={addWish} />
       <WishesList wishes={wishes} />
+      <WishesForm onAddWish={addWish} />
+      <RSVPForm />
+      <Footer/>
     </div>
   );
 }

@@ -1,38 +1,83 @@
 .wishes-form {
-     background: #f8e8d4;
-     padding: 2em;
-     border-radius: 12px;
-     margin: 2em auto;
-     width: 80%;
-     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-   }
-   
-   .wishes-form h2 {
-     font-size: 1.5em;
-     color: #8b6a4d;
-     margin-bottom: 0.5em;
-   }
-   
-   .wishes-form textarea {
-     width: 80%;
-     padding: 10px;
-     margin-top: 0.5em;
-     border: 1px solid #d09a72;
-     border-radius: 5px;
-   }
-   
-   .wishes-form button {
-     margin-top: 1em;
-     background-color: #875c36;
-     color: #fff;
-     border: none;
-     padding: 10px 20px;
-     cursor: pointer;
-     border-radius: 5px;
-     transition: background 0.3s;
-   }
-   
-   .wishes-form button:hover {
-     background-color: #5f4027;
-   }
-   
+  background-color: #990011;
+  padding: 20px;
+  color: #fcf6f5;
+  font-family: 'ms-regular', sans-serif;
+  max-width: 400px; /* Formun genişliğini sınırlandırdık */
+  width: 100%; /* Ekranın %90'ını kapsayacak şekilde ayarlandı */
+  margin: 30px auto; /* Ekran ortasında hizalamak için */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* İçerikleri yatayda ortalar */
+  
+}
+
+.wishes-form h2 {
+  font-family: 'veryberry', sans-serif;
+  color: #fcf6f5;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.9rem;
+}
+
+.wishes-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center; /* Form elemanlarını ortalar */
+}
+
+.wishes-form input[type="text"],
+.wishes-form textarea {
+  padding: 10px;
+  border: 1px solid #990011;
+  border-radius: 20px;
+  background-color: #ffffff;
+  font-family: 'ms-regular', sans-serif;
+  color: #990011;
+  font-size: 16px;
+  resize: none;
+  width: 150%; /* Genişlik esnek hale getirildi */
+  max-width: 300px; /* Daha büyük ekranlarda sınırlı genişlik */
+}
+
+.wishes-form textarea {
+  height: 100px;
+  max-height: 150px;
+
+}
+
+.wishes-form input[type="text"]::placeholder,
+.wishes-form textarea::placeholder {
+  color: #990011;
+  opacity: 0.7;
+}
+
+.wishes-form button {
+  background-color: #fcf6f5;
+  color: #990011;
+  border: none;
+  padding: 10px;
+  border-radius: 25px;
+  font-family: 'ms-bold', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 60%; /* Buton genişliği esnek */
+  max-width: 150px;
+  text-align: center;
+}
+
+.wishes-form button:hover {
+  background-color: #cc0010;
+}
+
+.wishes-form button:active {
+  background-color: #aa0010;
+}
+
+.wishes-form input[type="text"]:focus,
+.wishes-form textarea:focus {
+  outline: none;
+  border-color: #cc0010;
+}

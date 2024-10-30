@@ -55,20 +55,23 @@ const Address = () => {
       </div>
 
       <div className="counter-container">
-        <h2>20 Касымга чейин калган убакыт:</h2>
+        <h2>Калган убакыт:</h2>
         <div className="countdown">
           <div className="circle">
             <div className="number">{timeRemaining.days}</div>
             <div className="label">Күн</div>
           </div>
+          <span className="separator">:</span> {/* Arada iki nokta */}
           <div className="circle">
             <div className="number">{timeRemaining.hours}</div>
             <div className="label">Саат</div>
           </div>
+          <span className="separator">:</span> {/* Arada iki nokta */}
           <div className="circle">
             <div className="number">{timeRemaining.minutes}</div>
             <div className="label">Мүнөт</div>
           </div>
+          <span className="separator">:</span> {/* Arada iki nokta */}
           <div className="circle">
             <div className="number">{timeRemaining.seconds}</div>
             <div className="label">Секунд</div>

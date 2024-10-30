@@ -37,21 +37,21 @@
    .content-box h1 {
      font-size: 2.4rem;
      margin-bottom: 0.5rem;
-     font-family: 'veryberry', serif;
+     font-family: 'veryberry';
    }
    
    .content-box p {
      font-size: 1.2rem;
      margin: 0.5rem 0;
      line-height: 1.6;
-     font-family: 'ms-light', serif;
+     font-family: 'ms-light';
      color:#333;
    }
    
    .content-box h3 {
      font-size: 2.3rem;
      margin: 0.8rem 0;
-     font-family: 'veryberry', serif;
+     font-family: 'veryberry';
      color:#990011;
    }
    

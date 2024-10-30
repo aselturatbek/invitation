@@ -15,32 +15,32 @@ const WishesForm = () => {
         name,
         timestamp: serverTimestamp(),
       });
-      alert('Dilek kaydedildi!');
+      alert('Каалооңуз сакталды!');
       setWish('');
       setName('');
     } catch (error) {
-      console.error("Dilek kaydedilemedi: ", error);
+      console.error("Каалооңуз сакталбады: ", error);
     }
   };
 
   return (
     <div className="wishes-form">
-      <h2>Dileklerinizi Bırakın</h2>
+      <h2>Каалоонузду калтырыныз</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="İsim"
+          placeholder="Атыңыз"
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
         />
         <textarea
-          placeholder="Dileğinizi yazın..."
+          placeholder="Каалооңузду жазыңыз..."
           value={wish}
           onChange={(e) => setWish(e.target.value)}
           required
         />
-        <button type="submit">Gönder</button>
+        <button type="submit">Жөнөтүү</button>
       </form>
     </div>
   );
