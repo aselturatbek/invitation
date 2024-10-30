@@ -15,7 +15,8 @@
 
 .home {
     position: relative;
-    width: 100%;
+    width: 105%;
+    max-width:450px;
     height: 85vh;
     background-image: url('../assets/images/img1.jpg');
     background-size: cover;
